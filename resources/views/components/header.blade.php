@@ -10,8 +10,8 @@
 
     <div class="flex items-center">
         <div class="flex flex-col text-end">
-            <p class="text-sm font-serif">{{ Auth::user()->nama_lengkap }}</p>
-            <p class="font-sans">{{ Auth::user()->level }}</p>
+            <p class="text-xs font-[open-sans]">{{ Auth::user()->nama_lengkap }}</p>
+            <p class="font-[lato]">{{ Auth::user()->level }}</p>
         </div>
         <div class="dropdown dropdown-end">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">

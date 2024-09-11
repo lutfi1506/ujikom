@@ -1,7 +1,7 @@
 <x-main title="Tambah Petugas">
     <div class="flex justify-center">
         <div class="bg-primary py-6 px-6 rounded-md shadow-md max-w-96 flex-1">
-            <h2 class="text-2xl text-center font-semibold px-2 mb-3">Edit Petugas</h2>
+            <h2 class="text-2xl text-center font-semibold px-2 mb-3 font-[montserrat]">Edit Petugas</h2>
             <form action="{{ route('petugas.update', $petugas->id) }}" method="POST">
                 @csrf
                 @method('PUT')

@@ -1,7 +1,7 @@
 <x-main title="Pelanggan">
     <div class="card bg-primary shadow-xl">
         <div class="card-body">
-            <h2 class="text-2xl font-semibold px-2 mb-1">Daftar Pelanggan</h2>
+            <h2 class="text-2xl font-bold px-2 mb-1 font-[montserrat]">Daftar Pelanggan</h2>
             <div class="flex justify-between items-center">
                 <a href="{{ route('pelanggan.create') }}" class="btn btn-success btn-sm">
                     Tambah Pelanggan
@@ -19,8 +19,8 @@
                     </button>
                 </form>
             </div>
-            <table class="table w-full text-center my-4 table-zebra">
-                <thead>
+            <table class="table w-full text-center my-4 table-zebra border">
+                <thead class="bg-blue-900 text-white">
                     <tr>
                         <th class="py-2 px-4">No</th>
                         <th class="py-2 px-4">Nama Lengkap</th>

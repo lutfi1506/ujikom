@@ -59,7 +59,7 @@
             <div class="card bg-primary shadow-xl">
                 <div class="card-body ">
                     <div class="flex justify-between items-center">
-                        <section>
+                        <section class="text-sm">
                             <p>Penjualan id : {{ $penjualan->id }}</p>
                             <p>Kasir : {{ $penjualan->nama_petugas }}</p>
                             <p>Pelanggan: {{ $penjualan->pelanggan->nama }}</p>

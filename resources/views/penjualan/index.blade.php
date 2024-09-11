@@ -1,11 +1,11 @@
 <x-main title="Transaksi">
     <div class="card bg-primary shadow-xl">
         <div class="card-body">
-            <h2 class="text-2xl font-semibold px-2 mb-1">Transaksi</h2>
+            <h2 class="text-2xl font-bold px-2 mb-1 font-[montserrat]">Transaksi</h2>
             <div class="flex justify-between items-center">
                 <form action="{{ route('penjualan.init') }}" method="post">
                     @csrf
-                    <button type="submit" class="btn btn-success btn-sm">
+                    <button type="submit" class="btn btn-success btn-sm font-[montserrat]">
                         Tambah Transaksi
                     </button>
                 </form>
@@ -22,8 +22,8 @@
                     </button>
                 </form>
             </div>
-            <table class="table table-zebra w-full text-center my-4">
-                <thead>
+            <table class="table table-zebra border w-full text-center my-4">
+                <thead class="bg-blue-900 text-white">
                     <tr>
                         <th class="py-2 px-4">No</th>
                         <th class="py-2 px-4">Tanggal</th>

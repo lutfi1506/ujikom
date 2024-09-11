@@ -2,7 +2,7 @@
     <div class="flex justify-center">
         <div class="card w-96 bg-base-100 shadow-xl">
             <div class="card-body">
-                <h2 class="card-title">Edit pelanggan</h2>
+                <h2 class="text-2xl font-bold font-[montserrat] text-center">Edit pelanggan</h2>
                 <form action="{{ route('pelanggan.update', $pelanggan->id) }}" method="POST">
                     @csrf
                     @method('PUT')

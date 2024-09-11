@@ -2,7 +2,7 @@
     <div class="flex justify-center">
         <div class="card w-96 bg-base-100 shadow-xl">
             <div class="card-body">
-                <h2 class="card-title">Tambah pelanggan</h2>
+                <h2 class="text-2xl font-bold font-[montserrat] text-center">Tambah pelanggan</h2>
                 <form action="{{ route('pelanggan.store') }}" method="POST">
                     @csrf
                     <div class="grid grid-cols-6 gap-3">

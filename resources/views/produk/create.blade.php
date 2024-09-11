@@ -2,7 +2,7 @@
     <div class="flex justify-center">
         <div class="bg-primary card shadow-md">
             <div class="card-body">
-                <h2 class="text-2xl font-semibold px-2 mb-3">Tambah Produk</h2>
+                <h2 class="text-2xl font-bold px-2 mb-3 font-[montserrat] text-center">Tambah Produk</h2>
                 <form action="{{ route('produk.store') }}" method="POST">
                     @csrf
                     <div class="grid grid-cols-6 gap-2">

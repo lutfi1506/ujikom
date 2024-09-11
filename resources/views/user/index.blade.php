@@ -19,8 +19,8 @@
                     </button>
                 </form>
             </div>
-            <table class="table w-full text-center my-4">
-                <thead>
+            <table class="table table-zebra w-full text-center my-4 border">
+                <thead class="bg-blue-900 text-white">
                     <tr>
                         <th class="py-2 px-4">No</th>
                         <th class="py-2 px-4">Nama Lengkap</th>

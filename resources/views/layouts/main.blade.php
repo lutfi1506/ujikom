@@ -17,7 +17,7 @@
         <div class="flex flex-col flex-1">
             <x-header />
             <main class="flex-1 overflow-x-hidden overflow-y-auto">
-                <div class="container px-6 py-8 mx-auto">
+                <div class="container px-6 py-8 mx-auto font-[roboto]">
                     {{ $slot }}
                 </div>
             </main>
