@@ -37,9 +37,9 @@
                             <td class="px-4 py-2">{{ $loop->index + $produks->firstItem() }}</td>
                             <td class="px-4 py-2">{{ $produk->kode_produk }}</td>
                             <td class="px-4 py-2">{{ $produk->nama_produk }}</td>
-                            <td class="px-4 py-2">Rp.
-                                {{ number_format($produk->harga, 0, ',', '.') }}</td>
-                            <td class="px-4 py-2">{{ $produk->stok }}</td>
+                            <td class="px-4 py-2">
+                                {{ 'Rp. ' . number_format($produk->harga, 0, ',', '.') }}</td>
+                            <td class="px-4 py-2">{{ $produk->stok === 0 ? 'habis' : $produk->stok }}</td>
                             <td class="px-4 py-2">
                                 <a href="{{ route('produk.edit', $produk->id) }}"
                                     class="btn btn-warning btn-sm ">Edit</a>

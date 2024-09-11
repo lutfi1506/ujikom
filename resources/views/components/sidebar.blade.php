@@ -15,25 +15,28 @@
             <img src="/icon/cashier.svg" class="w-5">
             <span class="mx-3">Transaksi</span>
         </a>
-        <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('produk*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
-            href="/produk">
-            <img src="/icon/barcode.svg" class="w-6">
-            <span class="mx-3">Produk</span>
-        </a>
         <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('laporan*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
             href="/laporan">
             <img src="/icon/dashboard.svg" class="w-6">
             <span class="mx-3">Laporan</span>
         </a>
-        <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('pelanggan*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
-            href="/pelanggan">
-            <img src="/icon/user.svg" class="w-6">
-            <span class="mx-3">Pelanggan</span>
-        </a>
-        <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('petugas*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
-            href="/petugas">
-            <img src="/icon/petugas.svg" class="w-6">
-            <span class="mx-3">Petugas</span>
-        </a>
+        @can('isAdmin')
+            <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('produk*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
+                href="/produk">
+                <img src="/icon/barcode.svg" class="w-6">
+                <span class="mx-3">Produk</span>
+            </a>
+            <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('pelanggan*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
+                href="/pelanggan">
+                <img src="/icon/user.svg" class="w-6">
+                <span class="mx-3">Pelanggan</span>
+            </a>
+            <a class="flex items-center px-6 py-2 transition-all text-primary {{ Request::is('petugas*') ? 'bg-neutral' : 'hover:bg-neutral brightness-50 hover:brightness-110' }}"
+                href="/petugas">
+                <img src="/icon/petugas.svg" class="w-6">
+                <span class="mx-3">Petugas</span>
+            </a>
+        @endcan
+
     </nav>
 </div>
